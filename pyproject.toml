@@ -1,0 +1,17 @@
+[project]
+name = "eero-mcp-server"
+version = "0.1.0"
+description = "MCP server for managing eero WiFi networks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "eero>=0.0.1",
+]
+
+[project.scripts]
+eero-mcp-server = "eero_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
